@@ -14,7 +14,7 @@ const data = {
     },
     {
       "id": "2",
-      "src": "./portfolio.png",
+      "src": "/portfolio.png",
       "title": "Portfolio Website",
       "description": "My First Website",
       "link": "#about"
@@ -36,7 +36,7 @@ export default function Project() {
                 <h2>{item.title}</h2>
               </div>
               <div className='portfolio--section--img'>
-                <Image src={item.src} alt={`Project ${item.title}`} />
+                <Image src={item.src} alt={`Project ${item.title}`} width={500} height={300} />
               </div>
               <div className='subject'>{item.description}</div>
               <Link
