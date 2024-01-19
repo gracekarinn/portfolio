@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import "/Users/gracekarin/Desktop/project/components/project.css";
+import "./project.css";
+import Image from 'next/image';
 
 const data = {
   "portfolio": [
@@ -35,7 +36,7 @@ export default function Project() {
                 <h2>{item.title}</h2>
               </div>
               <div className='portfolio--section--img'>
-                <img src={item.src} alt={`Project ${item.title}`} />
+                <Image src={item.src} alt={`Project ${item.title}`} />
               </div>
               <div className='subject'>{item.description}</div>
               <Link

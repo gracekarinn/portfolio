@@ -4,9 +4,9 @@ import Navbar from "../components/navbar";
 import About from "@/components/about";
 import SwipeCarousel from "@/components/swipecaraousel";
 import Isi from "@/components/isi";
-import Skill from "@/components/skill";
-import Project from "@/components/project";
 import Footer from "@/components/footer";
+import Project from "@/components/project/project";
+import Skill from "@/components/skill/skill";
 
 
 

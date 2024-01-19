@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/gracekarin/Desktop/project/components/style.css';
+import './style.css';
 
 const Skill = () => {
   return (
