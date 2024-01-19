@@ -1,0 +1,91 @@
+.portfolio--section {
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 10%;
+}
+
+.container .main-title h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px; /* Reduce the margin */
+  text-transform: none; /* Ensure no uppercase */
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px; /* Reduce the margin */
+}
+
+.row .col {
+  flex-basis: 48%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.row .sub-title h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduce the margin */
+}
+
+.subject {
+  font-size: 20px;
+  font-weight: lighter;
+  color: black;
+  margin-top: 5px; /* Adjusted margin */
+  margin-bottom: 5px;
+  text-transform: none; 
+}
+
+.portfolio--link {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: -10px; /* Adjusted margin */
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: none; /* Ensure no uppercase */
+}
+
+.portfolio--link:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 8%;
+  }
+}
+
+@media (max-width: 568px) {
+  .container .row {
+    flex-direction: column;
+  }
+
+  .container .main-title h1 {
+    font-size: 36px;
+  }
+
+  .container .row {
+    margin-top: 20px; /* Adjusted margin */
+  }
+
+  .row .col {
+    margin-top: 10px; /* Adjusted margin */
+  }
+}
