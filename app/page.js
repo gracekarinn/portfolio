@@ -22,7 +22,6 @@ export default function Home() {
         <Isi />
         <Pemisah />
         <Skill />
-        <Pemisah />
         <Project />
         <Footer />
       </div>

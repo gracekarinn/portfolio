@@ -20,7 +20,7 @@ const SPRING_OPTIONS = {
 };
 
 export const SwipeCarousel = () => {
-  const [imgIndex, setImgIndex] = useState(0);
+  const [imgIndex, setImgIndex] = useState(1);
 
   const dragX = useMotionValue(0);
 

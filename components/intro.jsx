@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,7 +6,6 @@ import { SiSpotify } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
 
 const Intro = () => {
   return (
@@ -23,7 +21,7 @@ const Intro = () => {
             className="h-45 w-45 lg:size-fit rounded-full object-cover border-[0.35rem] border-white shadow-xl"
           />
         </div>
-        <div className='col-span-7 place-self-center'>
+        <div className='col-span-7 place-self-center md:translate-x-5'>
           <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>Henlo, I&apos;m Grace</h1>
             <p className='text-[#ADB7BE] text-lg lg:text-xl text-justify'>
               Coffee lover, rubik&apos;s cube enthusiast, and coding explorer. 
