@@ -83,10 +83,10 @@
   }
 
   .container .row {
-    margin-top: 20px; /* Adjusted margin */
+    margin-top: 20px; 
   }
 
   .row .col {
-    margin-top: 10px; /* Adjusted margin */
+    margin-top: 10px; 
   }
 }

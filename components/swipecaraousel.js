@@ -21,7 +21,6 @@ const SPRING_OPTIONS = {
 
 export const SwipeCarousel = () => {
   const [imgIndex, setImgIndex] = useState(1);
-
   const dragX = useMotionValue(0);
 
   useEffect(() => {
@@ -51,6 +50,14 @@ export const SwipeCarousel = () => {
     }
   };
 
+  const handleButtonClick = (direction) => {
+    if (direction === "next" && imgIndex < imgs.length - 1) {
+      setImgIndex((pv) => pv + 1);
+    } else if (direction === "prev" && imgIndex > 0) {
+      setImgIndex((pv) => pv - 1);
+    }
+  };
+
   return (
     <div className="relative overflow-hidden py-5 -translate-y-5">
       <motion.div
@@ -74,6 +81,9 @@ export const SwipeCarousel = () => {
 
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
       <GradientEdges />
+
+      <Button onClick={() => handleButtonClick("prev")} direction="prev" />
+      <Button onClick={() => handleButtonClick("next")} direction="next" />
     </div>
   );
 };
@@ -129,4 +139,22 @@ const GradientEdges = () => {
   );
 };
 
+const Button = ({ onClick, direction }) => {
+  const buttonText = direction === "next" ? ">>>" : "<<<";
+  const buttonStyles =
+    direction === "next"
+      ? "absolute bottom-2 right-10"
+      : "absolute bottom-2 left-10";
+
+  return (
+    <button
+      onClick={onClick}
+      className={`px-4 py-2 text-white rounded-md ${buttonStyles} focus:outline-none focus:ring focus:border-blue-300 transition-all hover:opacity-80`}
+    >
+      {buttonText}
+    </button>
+  );
+};
+
 export default SwipeCarousel;
+
