@@ -19,7 +19,6 @@ const Intro = () => {
   return (
     <section>
       <div className='grid grid-cols-1 lg:grid-cols-12'>
-        {/* Animation for the image */}
         <motion.div
           className='col-span-5 mx-auto my-5'
           initial={{ opacity: 0, scale: 0.5 }}
@@ -36,14 +35,13 @@ const Intro = () => {
           />
         </motion.div>
 
-        {/* Animation for the text */}
         <motion.div
           className='col-span-7 place-self-center md:translate-x-5'
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 5, scale: 1 }}
           transition={springConfig}
         >
-          <h1 className="text-white mb-4 text-3xl lg:text-6xl font-extrabold whitespace-nowrap">
+          <h1 className="text-white mb-4 text-3xl lg:text-5xl font-extrabold whitespace-nowrap">
             <span>
               Hello, I&apos;m{" "}
             </span>

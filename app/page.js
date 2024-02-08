@@ -11,6 +11,9 @@ import Footer from "@/components/footer";
 import Project from "@/components/project/project";
 import Skill from "@/components/skill/skill";
 import Preloader from "@/components/Preloader";
+import Experience from "@/components/experience";
+
+
 
 const Home = () => {
   const [loading, setLoading] = React.useState(true);
@@ -57,6 +60,7 @@ const Home = () => {
             <Pemisah />
             <Skill />
             <Project />
+            <Experience />
             <Footer />
           </motion.div>
         </>

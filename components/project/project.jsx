@@ -28,6 +28,7 @@ export default function Project() {
       <div className='container'>
         <div className='main-title'>
           <h1>My Projects</h1>
+          <p>Projects I&apos;ve worked on</p>
         </div>
         <div className='row'>
           {data?.portfolio?.map((item, index) => (
