@@ -11,15 +11,11 @@ import Footer from "@/components/footer";
 import Project from "@/components/project/project";
 import Skill from "@/components/skill/skill";
 import Preloader from "@/components/Preloader";
-import Experience from "@/components/experience";
-
-
 
 const Home = () => {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    // Simulate loading time
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -60,7 +56,6 @@ const Home = () => {
             <Pemisah />
             <Skill />
             <Project />
-            <Experience />
             <Footer />
           </motion.div>
         </>
